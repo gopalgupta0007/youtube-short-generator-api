@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon text-to-video-generator-ai.js"
+    "start": "nodemon text-to-voice-generator.js"
   },
   "type": "module",
   "keywords": [],
@@ -16,6 +16,7 @@
     "@google/genai": "^1.21.0",
     "@google/generative-ai": "^0.24.1",
     "axios": "^1.12.2",
+    "child_process": "^1.0.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
@@ -29,6 +30,7 @@
     "nodemon": "^3.1.10",
     "openai": "^5.23.1",
     "path": "^0.12.7",
+    "say": "^0.16.0",
     "sharp": "^0.34.4",
     "uuid": "^13.0.0"
   },
