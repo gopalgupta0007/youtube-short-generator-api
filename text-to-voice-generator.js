@@ -134,7 +134,7 @@ app.post('/api/text-to-speech', async (req, res) => {
     try {
         const {
             text,
-            languageCode = 'hi-IN',
+            languageCode = 'en-US',
             voiceName,
             gender = 'FEMALE',
             speakingRate = 1.0,
@@ -570,7 +570,7 @@ app.get('/', (req, res) => {
     });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3001;
 app.listen(PORT, () => {
     console.log(`🎙️  Native System TTS API running on port ${PORT}`);
     console.log(`📝 API Documentation: http://localhost:${PORT}/`);

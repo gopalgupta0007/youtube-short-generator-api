@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon text-to-video-generator-ai.js"
+    "start": "nodemon text-to-voice-caption-generator-2.js"
   },
   "type": "module",
   "keywords": [],
@@ -18,7 +18,7 @@
     "axios": "^1.12.2",
     "child_process": "^1.0.2",
     "cors": "^2.8.5",
-    "dotenv": "^17.2.2",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "ffmpeg-static": "^5.2.0",
     "ffprobe-static": "^3.1.0",
@@ -27,6 +27,7 @@
     "gtts": "^0.2.1",
     "mime": "^4.1.0",
     "multer": "^2.0.2",
+    "node-fetch": "^3.3.2",
     "nodemon": "^3.1.10",
     "openai": "^5.23.1",
     "path": "^0.12.7",
