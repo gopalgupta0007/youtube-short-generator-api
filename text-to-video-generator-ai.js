@@ -593,7 +593,7 @@ app.listen(PORT, () => {
 // javascript
 // GET /api/styles
 
-// // Returns:
+// // Returns: see differnce of styles in https://chatgpt.com/s/m_68de212c82988191a2ee3342dc7e962a
 // {
 //   "cinematic": "Film-like, professional",
 //   "anime": "Japanese animation style",
