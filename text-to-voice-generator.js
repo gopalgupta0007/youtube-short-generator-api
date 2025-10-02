@@ -37,7 +37,9 @@ const PLATFORM_VOICES = {
         'ja-JP-female': 'Microsoft Haruka Desktop',
         'ko-KR-female': 'Microsoft Heami Desktop',
         'zh-CN-female': 'Microsoft Huihui Desktop',
-        'ru-RU-female': 'Microsoft Irina Desktop'
+        'ru-RU-female': 'Microsoft Irina Desktop',
+        'hi-IN-male': 'Microsoft Hemant Desktop',
+        'hi-IN-female': 'Microsoft Kalpana Desktop'
     },
     // macOS voices
     darwin: {
@@ -132,7 +134,7 @@ app.post('/api/text-to-speech', async (req, res) => {
     try {
         const {
             text,
-            languageCode = 'en-US',
+            languageCode = 'hi-IN',
             voiceName,
             gender = 'FEMALE',
             speakingRate = 1.0,
