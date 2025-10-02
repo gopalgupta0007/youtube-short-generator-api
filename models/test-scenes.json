@@ -1,0 +1,20 @@
+{
+    "scenes": [
+        {
+            "imagePrompt": "A cozy study room with desk and books, natural lighting",
+            "sceneContent": "Are your kids struggling to stay focused while studying?",
+            "start": 0,
+            "end": 6
+        },
+        {
+            "imagePrompt": "Living room with TV turned off, child putting away tablet",
+            "sceneContent": "First, create a distraction-free zone. Turn off the TV and put away devices.",
+            "start": 7,
+            "end": 13
+        }
+    ],
+    "style": "realistic",
+    "fps": 3,
+    "aspectRatio": "9:16",
+    "captionStyle": "modern"
+}

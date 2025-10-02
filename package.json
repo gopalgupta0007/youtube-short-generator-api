@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon text-to-voice-caption-generator-2.js"
+    "start": "nodemon text-to-video-caption-generator-3.js"
   },
   "type": "module",
   "keywords": [],
