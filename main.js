@@ -4,7 +4,7 @@ import generateScripts from './models/topic-to-script-generator-ai.js';
 import generateImagePrompts from './models/script-to-image-caption-script-generator.js';
 
 // step 1 :- generate scripts
-const topic="kids study";
+const topic="thursty crow story";
 const scripts=await generateScripts(topic);
 const cleaned = scripts.replace(/```json\s*/, '').replace(/\s*```$/, '');
 const parsedScript = JSON.parse(cleaned);

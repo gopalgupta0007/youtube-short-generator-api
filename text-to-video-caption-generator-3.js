@@ -2997,3 +2997,24 @@ app.listen(PORT, () => {
 //     console.log(`   - OR Python gtts: pip install gtts`);
 //     console.log(`\n${'='.repeat(70)}\n`);
 // });
+
+
+// gemerated video file => video_1759592959242.mp4
+//   script = [{ 
+//     "imagePrompt": "A lush, sun-dappled forest path. The ground is covered in soft moss and fallen leaves. A small, confident rabbit with bright eyes and twitching nose stands poised at one end of the path, looking impatient. Nearby, a slow, determined turtle with a sturdy, textured shell is just beginning to move, looking calm and steady.",
+//     "sceneContent": "In a lush green forest, a boastful rabbit challenges a calm, steady turtle to a race.",
+//     "start": 0,
+//     "end": 8
+//   },
+//   {
+//     "imagePrompt": "The rabbit is a blur of motion, far ahead on the forest path, leaving a trail of kicked-up leaves. It looks back with an arrogant smirk. The path stretches far behind it, empty for now. The sunlight filters through the trees, highlighting its speed.",
+//     "sceneContent": "The rabbit dashes off, quickly gaining a huge lead.",
+//     "start": 8,
+//     "end": 14
+//   },
+//   {
+//     "imagePrompt": "The rabbit is now lounging lazily under a large, shady oak tree, clearly having fallen asleep. Its ears are relaxed, and a gentle breeze rustles the leaves around it. In the distance, faintly visible on the winding path, is the small, unhurried figure of the turtle, slowly but surely making progress.",
+//     "sceneContent": "Confident in its speed, the rabbit decides to take a nap under a shady tree.",
+//     "start": 14,
+//     "end": 22
+//   },]
