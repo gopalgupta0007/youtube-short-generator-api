@@ -19,7 +19,9 @@ export default async function generateImagePrompts(script) {
 
             - Just Give specifying image prompt depends on the story line
             - do not give camera angle image prompt
-            - Follow the Following schema and return JSON data (Max 4-5 Images)
+            - Follow the Following schema and return JSON data (Max 5-6 Images)
+            - Next scene generated imagePrompt should be relevent to previous image 
+            - In only sceneContent property should include 70-100 characters and as well as after every 5-6 word add \n in sceneContent 
             [
             {
             imagePrompt: "",
