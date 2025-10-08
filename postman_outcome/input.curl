@@ -1,0 +1,46 @@
+curl --location 'http://localhost:3000/api/generate-video-from-scenes' \
+--header 'Content-Type: application/json' \
+--data '{
+    "scenes": [
+        {
+            "imagePrompt": "A lush, vibrant forest path, illuminated by dappled sunlight filtering through tall trees. On the left, a sleek, agile rabbit with bright, mischievous eyes and perked ears stands confidently, looking slightly arrogant. On the right, a weathered, wise-looking turtle with a textured, moss-covered shell moves slowly but steadily. The path stretches into the distance, suggesting a long journey. The atmosphere is peaceful but with a hint of playful tension.",
+            "sceneContent": "Once upon a time,\n in a beautiful,\n green forest,\n lived a speedy rabbit\n and a slow,\n steady turtle.\n",
+            "start": 0,
+            "end": 6
+        },
+        {
+            "imagePrompt": "A close-up of the rabbit'\''s face, a smug expression as it brags. The turtle listens calmly, its eyes showing quiet resolve. Background suggests the same forest setting, perhaps a clearing where they meet.",
+            "sceneContent": "The proud rabbit boasts\n about its speed.\n It challenges the turtle\n to a race.",
+            "start": 6,
+            "end": 10
+        },
+        {
+            "imagePrompt": "The rabbit is a dynamic blur, far ahead on the forest path, leaving a puff of dust and leaves in its wake. Its body language is one of exhilaration and overconfidence. The path stretches clearly behind it. The turtle is a tiny, persistent speck far in the background, just starting its journey.",
+            "sceneContent": "The race begins!\n The rabbit shoots off\n like an arrow,\n leaving the turtle far\n behind. It feels superior.\n",
+            "start": 10,
+            "end": 15
+        },
+        {
+            "imagePrompt": "The confident rabbit is now sprawled out comfortably under a massive, ancient oak tree, completely asleep. Its breathing is deep and even, and a faint smile plays on its lips, dreaming of victory. Sunlight filters through the canopy, highlighting its peaceful slumber. Far down the winding path, the turtle is a persistent, small figure, slowly but surely closing the distance.",
+            "sceneContent": "The confident rabbit\n takes a nap\n under a shady tree.\n It thinks there'\''s\n plenty of time.\n",
+            "start": 15,
+            "end": 20
+        },
+        {
+            "imagePrompt": "The turtle, with an unwavering look of quiet determination, is now steadily passing the still-sleeping rabbit. Its legs move in a rhythmic, unhurried pace, focused purely on its goal. The setting sun casts long, dramatic shadows across the forest floor, emphasizing the passage of time and the turtle'\''s persistent effort.",
+            "sceneContent": "Meanwhile, the turtle continues\n to plod along,\n one slow step,\n never stopping, never resting.\n",
+            "start": 20,
+            "end": 25
+        },
+        {
+            "imagePrompt": "The finish line, a simple ribbon tied between two ancient trees, is prominently in view. The turtle, looking tired but victorious, is just breaking the ribbon. Its head is held high. In the background, the rabbit is shown waking up abruptly, its eyes wide with shock and dismay as it sees the turtle at the finish line. The forest is bathed in the warm, golden light of late afternoon, signifying the end of the day and the race.",
+            "sceneContent": "The turtle reaches\n the finish line,\n winning the race!\n The rabbit wakes\n up, utterly stunned.\n",
+            "start": 25,
+            "end": 30
+        }
+    ],
+    "style": "comic",
+    "fps": 10,
+    "aspectRatio": "9:16",
+    "captionStyle": "bold"
+}'
