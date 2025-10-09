@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon video-generation-api.js"
+    "start": "nodemon main.js"
   },
   "type": "module",
   "keywords": [],

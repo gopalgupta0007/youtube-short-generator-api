@@ -2,16 +2,7 @@
 import fetch from 'node-fetch';   // omit on Node >=18
 
 const MODEL = 'hf.co/tensorblock/gpt2-xl_lima-GGUF:latest';   // the name you saw in `ollama list`
-const PROMPT = `write a two different script for 30 Seconds video on Topic: tom and jerry story,\
-                    Give me response in JSON format and follow the schema\
-                    -{\
-                    scripts:[\
-                    {\
-                    content:\"
-                    \",\
-                    },\
-                    ]\
-                    }`;
+const PROMPT = `2+2 = ?`;
 
 async function generate() {
     const response = await fetch('http://127.0.0.1:11434/api/generate', {

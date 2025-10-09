@@ -7,7 +7,7 @@ import cors from 'cors';
 
 // Import the video generation function - assuming it's exported from somewhere
 // If not, you'll need to create/import it properly
-import { generateVideoFromScenesHandler } from './final-text-to-video-caption-generator-7.js';
+import { generateVideoFromScenesHandler } from './text-to-video-caption-generator-10.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -23,10 +23,14 @@ app.use(cors());
 app.use('/output', express.static(path.join(__dirname, 'output')));
 
 // GET endpoint for video generation
-app.get('/api/generate-video', async (req, res) => {
+app.get('/api/generate-video/:topic', async (req, res) => {
   try {
+    // Step 0 : suggest topic to video generate based on viral youtube shorts video keyword 
+    // Prompt are to generate trending topics are
+    // PROMPT : give me trending topic based on youtube viral video based on facts , motivational or story and output should be give in 0-10 word range in array and atleast have array 5-6 topic 
+
     // Step 1: Get topic from query parameter
-    const topic = req.query.topic;
+    const topic = req.params.topic;
 
     if (!topic) {
       return res.status(400).json({
