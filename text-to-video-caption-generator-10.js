@@ -734,7 +734,7 @@ export async function generateVideoFromScenesHandler(generatedScript) {
 
 
         if (!scenes || !Array.isArray(scenes) || scenes.length === 0) {
-            return res.status(400).json({ error: 'Scenes array required' });
+            return { error: 'Scenes array required' };
         }
 
         const result = await generator.generateVideoFromScenes({
@@ -748,19 +748,19 @@ export async function generateVideoFromScenesHandler(generatedScript) {
             outputName: `video_${Date.now()}.mp4`
         });
 
-        res.json({
+        return{
             success: true,
             message: 'Video generated successfully with voice-synced captions',
             data: result,
             videoUrl: `/videos/${result.fileName}`
-        });
+        };
 
     } catch (error) {
         console.error('API Error:', error);
-        res.status(500).json({
+        return {
             error: 'Video generation failed',
             details: error.message
-        });
+        };
     }
 };
 
