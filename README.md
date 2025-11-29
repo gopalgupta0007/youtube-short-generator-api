@@ -101,7 +101,7 @@ No body required. Script generation parameters are hardcoded in the route.
 ### Example Usage
 
 ```bash
-curl http://localhost:3000/
+curl --location 'http://localhost:3001/api/generate-video/thursty crow Story'
 ```
 
 ### Expected Output

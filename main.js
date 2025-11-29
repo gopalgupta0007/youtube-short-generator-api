@@ -7,7 +7,7 @@ import cors from 'cors';
 
 // Import the video generation function - assuming it's exported from somewhere
 // If not, you'll need to create/import it properly
-import { generateVideoFromScenesHandler } from './text-to-video-caption-generator-10.js';
+import { generateVideoFromScenesHandler } from './text-to-video-caption-generator-11.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
