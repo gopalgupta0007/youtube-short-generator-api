@@ -704,20 +704,19 @@ class AIVideoGenerator {
 
 const generator = new AIVideoGenerator();
 
-app.post('/api/generate-video-from-scenes', async (req, res) => {
+// app.post('/api/generate-video-from-scenes', async (req, res) => {
+export async function generateVideoFromScenesHandler(generatedScript) {
     try {
-        const {
-            scenes,
-            style = 'realistic',
-            fps = 8,
-            aspectRatio = '9:16',
-            captionStyle = 'bold',
-            transition = true,
-            transitionDuration = 0.6
-        } = req.body;
+            const scenes=generatedScript
+            const style = 'realistic'
+            const fps = 8
+            const aspectRatio = '9:16'
+            const captionStyle = 'bold'
+            const transition = true
+            const transitionDuration = 0.6
 
         if (!scenes || !Array.isArray(scenes) || scenes.length === 0) {
-            return res.status(400).json({ error: 'Scenes array required' });
+            return { error: 'Scenes array required' };
         }
 
         const result = await generator.generateVideoFromScenes({
@@ -731,21 +730,22 @@ app.post('/api/generate-video-from-scenes', async (req, res) => {
             outputName: `video_${Date.now()}.mp4`
         });
 
-        res.json({
+        return {
             success: true,
             message: 'Video generated successfully with voice-synced captions',
             data: result,
             videoUrl: `/videos/${result.fileName}`
-        });
+        };
 
     } catch (error) {
         console.error('API Error:', error);
-        res.status(500).json({
+        return {
+            success: false,
             error: 'Video generation failed',
             details: error.message
-        });
+        };
     }
-});
+};
 
 app.get('/', (req, res) => {
     res.json({
