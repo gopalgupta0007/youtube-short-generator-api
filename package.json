@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon main.js"
+    "start": "nodemon recommendation.js"
   },
   "type": "module",
   "keywords": [],
@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@freetube/yt-trending-scraper": "^3.1.1",
     "@google-cloud/text-to-speech": "^6.3.0",
     "@google/genai": "^1.21.0",
     "@google/generative-ai": "^0.24.1",
@@ -32,6 +33,7 @@
     "openai": "^5.23.1",
     "path": "^0.12.7",
     "say": "^0.16.0",
+    "scrape-youtube": "^2.4.0",
     "sharp": "^0.34.4",
     "uuid": "^13.0.0"
   },

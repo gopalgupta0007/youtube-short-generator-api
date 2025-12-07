@@ -4,6 +4,8 @@ import generateImagePrompts from './models/script-to-image-caption-script-genera
 import { fileURLToPath } from 'url';
 import path from 'path';
 import cors from 'cors';
+import yts from "@freetube/yt-trending-scraper"; // default import for a CommonJS package
+// const { scrape_trending_page } = pkg;
 
 // Import the video generation function - assuming it's exported from somewhere
 // If not, you'll need to create/import it properly
@@ -91,26 +93,27 @@ app.get('/health', (req, res) => {
   });
 });
 
-// API documentation endpoint
-app.get('/', (req, res) => {
-  res.json({
-    service: 'Video Generation API',
-    version: '1.0.0',
-    endpoints: {
-      '/api/generate-video': {
-        method: 'GET',
-        description: 'Generate a video based on a topic',
-        parameters: {
-          topic: 'The topic to generate a video about (required)'
-        },
-        example: '/api/generate-video?topic=facts%20on%20earth'
-      },
-      '/health': {
-        method: 'GET',
-        description: 'Health check endpoint'
-      }
-    }
-  });
+
+// Trending API
+app.get("/api/trending", async (req, res) => {
+  try {
+    const videos = await yts.scrape_trending_page({
+      geoLocation: "US",
+      parseCreatorOnRise: true,
+      page: "default", // default | music | gaming | movies
+    });
+
+    res.json({
+      status: true,
+      count: videos.length,
+      data: videos,
+    });
+  } catch (err) {
+    res.status(500).json({
+      status: false,
+      message: err.message,
+    });
+  }
 });
 
 // Start the server
