@@ -444,19 +444,26 @@ async function handleTrendingRequest(req, res) {
     console.log(`📊 Categories:`, categoryDistribution);
     console.log(`${'='.repeat(70)}\n`);
     
-    // Send response
+    // // Send response
+    // res.json({
+    //   success: true,
+    //   count: processedVideos.length,
+    //   timestamp: new Date().toISOString(),
+    //   filters: {
+    //     category: category || 'all',
+    //     minViews: minViews || 0,
+    //     sortBy: sortBy
+    //   },
+    //   categoryDistribution,
+    //   data: processedVideos
+    // });
+    const mappedData = mapYoutubeData(processedVideos);
     res.json({
       success: true,
-      count: processedVideos.length,
+      count: mappedData.length,
       timestamp: new Date().toISOString(),
-      filters: {
-        category: category || 'all',
-        minViews: minViews || 0,
-        sortBy: sortBy
-      },
-      categoryDistribution,
-      data: processedVideos
-    });
+      data: mappedData
+    })
     
   } catch (error) {
     console.error('Error fetching trending videos:', error);
@@ -547,6 +554,31 @@ app.use((err, req, res, next) => {
     message: err.message
   });
 });
+
+function getUploadDay(uploadedAt) {
+  const date = new Date(uploadedAt);
+  const day = date.getDay(); // 0=Sun ... 6=Sat
+  return day === 0 ? 6 : day - 1;
+}
+
+function mapYoutubeData(rawData) {
+  return rawData.map(video => ({
+    video_id: video.videoId,
+    title: video.title,
+    description: video.description,
+    category: video.category || "Unknown",
+    topic: video.extractedTopics?.[0] || "general",
+    views: video.metrics?.views || video.views || 0,
+    likes: video.metrics?.likes || video.likes || 0,
+    dislikes: video.metrics?.dislikes || video.dislikes || 0,
+    comments: video.metrics?.comments || video.comments || 0,
+    duration_seconds: video.durationSeconds || 0,
+    subscriber_count: video.metrics?.subscribers || 0,
+    tags: video.extractedTopics || [],
+    description_length: video.description ? video.description.length : 0,
+    upload_day: getUploadDay(video.uploadedAt)
+  }));
+}
 
 // Start server
 app.listen(PORT, () => {

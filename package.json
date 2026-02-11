@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./getYTtrendingVideosData/getYTData4.js"
+    "start": "nodemon main.js"
   },
   "type": "module",
   "keywords": [],
@@ -14,7 +14,7 @@
   "dependencies": {
     "@freetube/yt-trending-scraper": "^3.1.1",
     "@google-cloud/text-to-speech": "^6.3.0",
-    "@google/genai": "^1.21.0",
+    "@google/genai": "^1.40.0",
     "@google/generative-ai": "^0.24.1",
     "axios": "^1.13.2",
     "cheerio": "^1.1.2",
@@ -31,7 +31,8 @@
     "multer": "^2.0.2",
     "node-fetch": "^3.3.2",
     "nodemon": "^3.1.10",
-    "openai": "^5.23.1",
+    "ollama": "^0.6.3",
+    "openai": "^6.17.0",
     "path": "^0.12.7",
     "say": "^0.16.0",
     "scrape-youtube": "^2.4.0",

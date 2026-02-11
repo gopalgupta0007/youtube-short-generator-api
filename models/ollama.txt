@@ -1,0 +1,3 @@
+start model => ollama serve
+
+stop running model background => taskkill /IM ollama.exe /F

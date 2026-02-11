@@ -24,7 +24,7 @@ export default async function generateScripts(topic) {
                     },\
                     ]\
                     }`,
-            model: "gpt-4o-mini"
+            model: "o4-mini"
         });
 
         console.log(response.output_text);

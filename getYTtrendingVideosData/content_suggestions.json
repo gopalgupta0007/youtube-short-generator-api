@@ -1,0 +1,189 @@
+{
+  "total_analyzed": 10,
+  "category": "Trending News",
+  "topic": "t20",
+  "avg_views": 4581.8,
+  "common_themes": [
+    "t20",
+    "trending",
+    "news",
+    "stories",
+    "2025",
+    "tv9",
+    "december",
+    "october",
+    "september",
+    "august"
+  ],
+  "optimal_title_length": "51 characters",
+  "suggestions": [
+    {
+      "reference_video": "T20 : Trending News Stories | 26 October 2025 - TV9",
+      "category": "Trending News",
+      "topic": "t20",
+      "views": 10179,
+      "engagement_rate": 5.992141453831041,
+      "suggested_title": "T20 News Update - Top Stories 26 October 2025",
+      "suggested_summary": "Cover the latest trending t20 stories. Include breaking news, viral moments, and key updates. Keep it concise and engaging with quick cuts between stories. Use news graphics and trending hashtags.",
+      "optimal_duration": "10526 minutes (631600 seconds)",
+      "best_upload_day": "Saturday",
+      "key_keywords": [
+        "trending",
+        "news",
+        "stories",
+        "t20",
+        "2025",
+        "october"
+      ],
+      "hashtags": [
+        "#trending",
+        "#viral",
+        "#2025",
+        "#news",
+        "#breakingnews",
+        "#latestnews",
+        "#t20"
+      ],
+      "predicted_viral_potential": "High",
+      "success_factors": [
+        "Significantly above average views",
+        "Concise, catchy title",
+        "Uses trending keywords"
+      ]
+    },
+    {
+      "reference_video": "T20 : Trending News Stories | 17 December 2025 - TV9",
+      "category": "Trending News",
+      "topic": "t20",
+      "views": 6343,
+      "engagement_rate": 5.753467843631778,
+      "suggested_title": "Breaking: T20 Trending Stories - 17 December 2025",
+      "suggested_summary": "Cover the latest trending t20 stories. Include breaking news, viral moments, and key updates. Keep it concise and engaging with quick cuts between stories. Use news graphics and trending hashtags.",
+      "optimal_duration": "10526 minutes (631600 seconds)",
+      "best_upload_day": "Saturday",
+      "key_keywords": [
+        "trending",
+        "news",
+        "stories",
+        "december",
+        "2025",
+        "t20"
+      ],
+      "hashtags": [
+        "#trending",
+        "#viral",
+        "#2025",
+        "#news",
+        "#breakingnews",
+        "#latestnews",
+        "#t20"
+      ],
+      "predicted_viral_potential": "High",
+      "success_factors": [
+        "Concise, catchy title",
+        "Uses trending keywords"
+      ]
+    },
+    {
+      "reference_video": "T20 : Trending News Stories | 10 September 2025 - TV9",
+      "category": "Trending News",
+      "topic": "t20",
+      "views": 5403,
+      "engagement_rate": 7.383419689119171,
+      "suggested_title": "Breaking: T20 Trending Stories - 10 September 2025",
+      "suggested_summary": "Cover the latest trending t20 stories. Include breaking news, viral moments, and key updates. Keep it concise and engaging with quick cuts between stories. Use news graphics and trending hashtags.",
+      "optimal_duration": "10526 minutes (631600 seconds)",
+      "best_upload_day": "Saturday",
+      "key_keywords": [
+        "trending",
+        "news",
+        "september",
+        "stories",
+        "2025",
+        "t20"
+      ],
+      "hashtags": [
+        "#trending",
+        "#viral",
+        "#2025",
+        "#news",
+        "#breakingnews",
+        "#latestnews",
+        "#t20"
+      ],
+      "predicted_viral_potential": "High",
+      "success_factors": [
+        "High engagement rate",
+        "Concise, catchy title",
+        "Uses trending keywords"
+      ]
+    },
+    {
+      "reference_video": "T20 : Trending News Stories | 31 December 2025 - TV9",
+      "category": "Trending News",
+      "topic": "t20",
+      "views": 5335,
+      "engagement_rate": 5.865817091454273,
+      "suggested_title": "Trending Now: T20 Headlines You Need to Know",
+      "suggested_summary": "Cover the latest trending t20 stories. Include breaking news, viral moments, and key updates. Keep it concise and engaging with quick cuts between stories. Use news graphics and trending hashtags.",
+      "optimal_duration": "10526 minutes (631600 seconds)",
+      "best_upload_day": "Saturday",
+      "key_keywords": [
+        "trending",
+        "news",
+        "stories",
+        "december",
+        "2025",
+        "t20"
+      ],
+      "hashtags": [
+        "#trending",
+        "#viral",
+        "#2025",
+        "#news",
+        "#breakingnews",
+        "#latestnews",
+        "#t20"
+      ],
+      "predicted_viral_potential": "High",
+      "success_factors": [
+        "Concise, catchy title",
+        "Uses trending keywords"
+      ]
+    },
+    {
+      "reference_video": "T20 : Trending News Stories | 09 August 2025 - TV9",
+      "category": "Trending News",
+      "topic": "t20",
+      "views": 4245,
+      "engagement_rate": 6.641544983513896,
+      "suggested_title": "Latest T20: What's Trending Today",
+      "suggested_summary": "Cover the latest trending t20 stories. Include breaking news, viral moments, and key updates. Keep it concise and engaging with quick cuts between stories. Use news graphics and trending hashtags.",
+      "optimal_duration": "10526 minutes (631600 seconds)",
+      "best_upload_day": "Saturday",
+      "key_keywords": [
+        "trending",
+        "news",
+        "stories",
+        "2025",
+        "t20",
+        "august"
+      ],
+      "hashtags": [
+        "#trending",
+        "#viral",
+        "#2025",
+        "#news",
+        "#breakingnews",
+        "#latestnews",
+        "#t20"
+      ],
+      "predicted_viral_potential": "High",
+      "success_factors": [
+        "High engagement rate",
+        "Concise, catchy title",
+        "Uses trending keywords"
+      ]
+    }
+  ]
+}
