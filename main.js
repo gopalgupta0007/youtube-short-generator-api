@@ -11,7 +11,7 @@ import yts from "@freetube/yt-trending-scraper"; // default import for a CommonJ
 
 // Import the video generation function - assuming it's exported from somewhere
 // If not, you'll need to create/import it properly
-import { generateVideoFromScenesHandler } from './text-to-video-caption-generator-13.js';
+import { generateVideoFromScenesHandler } from './text-to-video-caption-generator-15.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

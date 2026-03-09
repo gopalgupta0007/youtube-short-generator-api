@@ -60,6 +60,7 @@ export default async function generateImagePrompts(script) {
                 - Content must match the same scene's image.
                 - DO NOT repeat narration between scenes.
                 - DO NOT use generic filler text.
+                - sceneContent should not be contain less then 15 words to 17 words.
                 
                 ANTI-PLACEHOLDER RULE (VERY IMPORTANT):
                 - Do NOT use template words such as:

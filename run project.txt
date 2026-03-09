@@ -1,0 +1,7 @@
+run project
+
+step 1(port 4000) : cd C:\Users\Gopal gupta\OneDrive\Desktop\getYTDataNode => npm run dev
+step 2(port 5000) : cd C:\Users\Gopal gupta\OneDrive\Desktop\ytViralityAPI => python .\youtube_virality_api4.py
+step 3(port 3001) : cd C:\Users\Gopal gupta\OneDrive\Desktop\test => npm start
+
+step 4(UI port 5173) : cd cd C:\Users\Gopal gupta\OneDrive\Desktop\yt recommendation ui  => npm run dev
