@@ -1,8 +1,16 @@
-﻿# AI Content Generation API Suite
+<h2>Project Demo</h2>
+
+ # AI Content Generation API Suite
 
 A comprehensive API suite for generating AI-powered video content, including script generation, text-to-speech conversion, and text-to-video creation.
 
 ---
+
+# [Overview.mp4](https://drive.google.com/file/d/1xnfSQKtcAxxv7gocpZzw47eAxyxMvNzI/view)<br/>
+[video-generation-demo.mp4](https://drive.google.com/file/d/1yIVf7vFZQLCga8rRMFUrZygu4-Oxidan/preview)
+--
+
+# Documentation => [Trend Based Recommendation Sytem.docx](https://github.com/user-attachments/files/25995946/Trend.Based.Recommendation.Sytem.docx)
 
 ## Table of Contents
 
@@ -13,9 +21,6 @@ A comprehensive API suite for generating AI-powered video content, including scr
 5. [API 3: AI Video Generator](#api-3-ai-video-generator)
 6. [Complete Workflow Example](#complete-workflow-example)
 7. [Troubleshooting](#troubleshooting)
-
-[video-generation-demo.mp4](https://drive.google.com/file/d/1yIVf7vFZQLCga8rRMFUrZygu4-Oxidan/preview)
----
 
 ## Overview
 
